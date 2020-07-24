@@ -36,12 +36,10 @@ h1 {
 .icon {
     width: 65px;
     height: 65px;
-    /* background-color: white; */
-    /* border-radius: 10px; */
 }
 
 .icon:hover {
-    animation: highlight-png;
+    animation: highlight-icon;
     animation-duration: .5s;
     animation-fill-mode: forwards;
 }
@@ -80,7 +78,7 @@ h1 {
 
 /* Animations */
 
-@keyframes highlight-png {
+@keyframes highlight-icon {
     from {
         filter: invert(0%)
     }
