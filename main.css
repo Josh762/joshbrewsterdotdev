@@ -3,6 +3,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: #f55347;
     color: white;
@@ -22,12 +23,89 @@ h1 {
     justify-content: center;
 }
 
+.about-container {
+    background-color: teal;
+    height: 100vh;
+}
+
 .content-span {
     display: flex;
     justify-content: center;
 }
 
+/* .cv-download-container {
+    position: absolute;
+    bottom: 0;
+}
+
+.cv-download-img {
+    width: 65px;
+} */
+
+
+
+
+.icon {
+    width: 65px;
+    height: 65px;
+    /* background-color: white; */
+    /* border-radius: 10px; */
+}
+
+.icon:hover {
+    animation: mildPulse ;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
 .image-span {
     width: 20px;
     height: 20px;
+}
+
+.vertical-line{
+    display: inline-block;
+    border-left: 2px solid black;
+    margin: 0 10px;
+    height: 65px;
+}
+
+
+/* Waving */
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+
+
+
+
+/* Animations */
+
+@keyframes mildPulse {
+    from {
+        filter: invert(0%)
+    }
+
+    to {
+        filter: invert(100%)
+    }
 }
