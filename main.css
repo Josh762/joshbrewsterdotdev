@@ -2,9 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Roboto+Condensed&display=swap');
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-color: #f55347;
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
@@ -15,6 +12,7 @@ h1 {
     font-size: 3em;
 }
 
+/* Content containers */
 
 .main-container {
     height: 100vh;
@@ -33,17 +31,7 @@ h1 {
     justify-content: center;
 }
 
-/* .cv-download-container {
-    position: absolute;
-    bottom: 0;
-}
-
-.cv-download-img {
-    width: 65px;
-} */
-
-
-
+/* Icons */
 
 .icon {
     width: 65px;
@@ -53,18 +41,13 @@ h1 {
 }
 
 .icon:hover {
-    animation: mildPulse ;
+    animation: highlight-png;
     animation-duration: .5s;
     animation-fill-mode: forwards;
 }
 
 
-
-
-.image-span {
-    width: 20px;
-    height: 20px;
-}
+/* Vertical Separator */
 
 .vertical-line{
     display: inline-block;
@@ -74,7 +57,8 @@ h1 {
 }
 
 
-/* Waving */
+/* Waving Animation */
+
 .wave {
   animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
   animation-duration: 2.5s;        /* Change to speed up or slow down */
@@ -94,13 +78,9 @@ h1 {
   100% { transform: rotate( 0.0deg) }
 }
 
-
-
-
-
 /* Animations */
 
-@keyframes mildPulse {
+@keyframes highlight-png {
     from {
         filter: invert(0%)
     }
