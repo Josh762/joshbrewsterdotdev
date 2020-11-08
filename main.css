@@ -40,6 +40,25 @@ h1 {
     background-color: steelblue;
 }
 
+/* projects section */
+
+.project-preview-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+    overflow-x: scroll;
+
+}
+
+.project-preview {
+    height: 65vh;
+    min-height: 300px;
+    min-width: 300px;
+    background-color: aliceblue;
+    display: block;
+}
+
 .projects-section {
     background-color: teal;
 }
@@ -106,52 +125,42 @@ h1 {
     }
 }
 
-.nav-container {
-    height: 100vh;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+@keyframes move-down {
+    from {
+        transform: translateY(0);
+    }
 
-.nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    left: 0;
-    height: 75%;
-    width: 125px;
-    /*background-color: white;*/
-}
-
-.nav-item {
-    text-decoration: none;
-    cursor: pointer;
-    color: white;
-    font-size: 1.5em;
-    transition-duration: .25s;
-    margin: 10px 10px 10px 20px;
-}
-
-.nav-item:hover {
-    font-size: 1.75em;
-    transition-duration: .25s;
-}
-
-.nav-active {
-    /*background-color: purple;*/
-    font-size: 2.5em !important;
-    transition-duration: .5s;
-}
-
-/*.nav-item {*/
-/*    font-size: 2em;*/
-/*    color: yellow;*/
-/*    transition-duration: .25s;*/
-/*}*/
-
-@media only screen and (max-width: 1000px) {
-    .nav {
-        display: none;
+    to {
+        transform: translateY(10px);
     }
 }
+
+.nav-down-container {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+
+    margin: auto;
+    position: absolute;
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+}
+
+.arrow-shape {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid black;
+  }
+
+  .arrow-animation {
+    animation: move-down;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+

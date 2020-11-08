@@ -9,7 +9,15 @@
 </head>
 
 <body>
-<div class="nav-container">
+    <!-- <div class="nav-container-row">
+        <div class="nav-items-container">
+            <span class="nav-item" id="home-nav" onclick="scrollToSection('home')"><h2>Home</h2></span>
+            <span class="nav-item" id="projects-nav" onclick="scrollToSection('projects')"><h2>Projects</h2></span>
+            <span class="nav-item" onclick="scrollToSection('projects')"><h2>Contact</h2></span>
+
+        </div>
+    </div> -->
+<!-- <div class="nav-container">
     <div class="nav">
         <span class="nav-item" id="home-nav" onclick="scrollToSection('home')">Home</span>
         <span class="nav-item" id="experience-nav" onclick="scrollToSection('experience')">Experience</span>
@@ -17,43 +25,50 @@
         <span class="nav-item" onclick="scrollToSection('projects')">Blog</span>
         <span class="nav-item" onclick="scrollToSection('projects')">Contact</span>
     </div>
-</div>
+</div> -->
 
 <div class="section-container" id="home">
-        <span class="content-span">
-            <h1>Hi, I'm Josh.<span class="wave">👋</span></h1>
-        </span>
+    <span class="content-span">
+        <h1>Hi, I'm Josh.<span class="wave">👋</span></h1>
+    </span>
     <span class="content-span">
             <h1>Software Engineer</h1>
         </span>
     <span class="content-span" id="home-content">
-            <a title="Connect with me on LinkedIn!"
-               target="_blank"
-               href="https://www.linkedin.com/in/joshua-brewster/">
-                <img src="./images/li.png" alt="" class="icon">
-            </a>
-            <span class="vertical-line"></span>
-            <a title="Check out my GitHub!"
-               target="_blank"
-               href="https://github.com/Josh762">
-                <img class="icon" src="./images/gh.png" alt="">
-            </a>            
-            <span class="vertical-line"></span>
-            <a title="Download my Résumé!"
-               href="https://docs.google.com/document/d/1E6vzEpUDH7LUIE5ykmhcXqJ6yQzFJZMt_EA-GkauLwM/export?format=pdf">
-                <img class="icon" src="/images/cv.png">
-            </a>
-        </span>
-</div>
-<div class="section-container experience-section" id="experience">
-        <span class="content-span" id="experience-content">
-            <h1>Experience</h1>
-        </span>
+        <a title="Connect with me on LinkedIn!"
+            target="_blank"
+            href="https://www.linkedin.com/in/joshua-brewster/">
+            <img src="./images/li.png" alt="" class="icon">
+        </a>
+        <span class="vertical-line"></span>
+        <a title="Check out my GitHub!"
+            target="_blank"
+            href="https://github.com/Josh762">
+            <img class="icon" src="./images/gh.png" alt="">
+        </a>            
+        <span class="vertical-line"></span>
+        <a title="Download my Résumé!"
+            href="https://docs.google.com/document/d/1E6vzEpUDH7LUIE5ykmhcXqJ6yQzFJZMt_EA-GkauLwM/export?format=pdf">
+            <img class="icon" src="/images/cv.png">
+        </a>
+    </span>
+    <div class="content-span nav-down-container" onclick="scrollToSection('projects')">
+        <span class="arrow-shape arrow-animation"></span>
+    </div>
 </div>
 <div class="section-container projects-section" id="projects">
-        <span class="content-span" id="project-content">
-            <h1>Projects</h1>
-        </span>
+    <span class="content-span" id="project-content">
+        <h1>Projects</h1>
+    <div class="project-preview-container">
+        <!-- <span class="project-preview">a</span>
+        <span class="project-preview">a</span>
+        <span class="project-preview">a</span>
+        <span class="project-preview">a</span>
+        <span class="project-preview">a</span> -->
+
+        
+    </div>
+    </span>
 </div>
 <script src="./index.js"></script>
 </body>
